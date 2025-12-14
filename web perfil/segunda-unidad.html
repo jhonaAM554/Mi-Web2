@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Unidad</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: #0b1220; /* Fondo oscuro */
+            color: #e6eef8;     /* Texto claro */
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #000 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .nav-link:hover {
+            background: rgba(255,255,255,0.18);
+            border-radius: 6px;
+        }
+
+        /* FOTO NAVBAR */
+        .profile-img-nav {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #444;
+            margin-right: 12px;
+        }
+
+        .container-main {
+            margin-top: 30px;
+            max-width: 1100px;
+        }
+
+        /* CAJAS DE CONTENIDO */
+        .content-box {
+            background: #111827; /* Oscuro elegante */
+            padding: 20px;
+            border-radius: 10px;
+            color: #d5e1f5;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+            display: none;
+        }
+
+        /* BOTONES */
+        .btn-unit {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark px-3">
+<img src="imagen.png" class="profile-img-nav">
+    <a class="navbar-brand fw-bold">Jhonatan Julio Cesar Amanqui Durand</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="Pagina-web.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" onclick="mostrar('tema1')" class="nav-link">Tema 1</a></li>
+            <li class="nav-item"><a href="#" onclick="mostrar('tema2')" class="nav-link">Tema 2</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container container-main">
+
+    <div id="tema1" class="content-box">
+        <h3>Tema 1</h3>
+        <a href="#" class="btn btn-outline-primary w-100 mt-2 btn-unit">Ejercicio 1</a>
+    </div>
+
+    <div id="tema2" class="content-box">
+        <h3>Tema 2</h3>
+        <a href="#" class="btn btn-outline-primary w-100 mt-2 btn-unit">Ejercicio 2</a>
+    </div>
+
+</div>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function mostrar(id) {
+    document.querySelectorAll(".content-box").forEach(e => e.style.display = "none");
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>

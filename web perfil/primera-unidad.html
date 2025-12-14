@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Unidad</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: #0b1220; 
+            color: #e6eef8;     
+        }
+
+        .navbar {
+            background: #000 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .nav-link:hover {
+            background: rgba(255,255,255,0.18);
+            border-radius: 6px;
+        }
+
+        .profile-img-nav {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #444;
+            margin-right: 12px;
+        }
+
+        .container-main {
+            margin-top: 30px;
+            max-width: 1100px;
+        }
+
+        .content-box {
+            background: #111827;         
+            padding: 20px;
+            border-radius: 10px;
+            color: #d5e1f5;        
+            box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+            display: none;
+        }
+
+        .btn-unit {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark px-3">
+<img src="imagen.png" class="profile-img-nav">
+    <a class="navbar-brand fw-bold">Jhonatan Julio Cesar Amanqui Durand</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="Pagina-web.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="mostrar('html')">HTML</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="mostrar('css')">CSS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="mostrar('javascript')">JavaScript</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="mostrar('Getbootstrap')">Getbootstrap</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="mostrar('Trabajos')">Trabajos</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container container-main">
+
+    <div id="html" class="content-box">
+        <h3>Ejercicios</h3>
+        <a href="http://3.213.140.233/Primera-Unidad/html/web1.html" class="btn btn-outline-primary w-100 mt-2 btn-unit">HTML 01</a>
+        <a href="http://3.213.140.233/Primera-Unidad/html/web2.html" class="btn btn-outline-primary w-100 mt-2 btn-unit">HTML 02</a>
+        <a href="http://3.213.140.233/Primera-Unidad/html/prac01.html" class="btn btn-outline-primary w-100 mt-2 btn-unit">HTML 03</a>
+        <a href="http://3.213.140.233/Primera-Unidad/html/prac02.html" class="btn btn-outline-primary w-100 mt-2 btn-unit">HTML 04</a>
+    </div>
+
+    <div id="css" class="content-box">
+        <h3>Ejercicios</h3>
+        <a href="http://3.213.140.233/Primera-Unidad/Css/flex1.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Css 01</a>
+        <a href="http://3.213.140.233/Primera-Unidad/Css/flex2.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Css 02</a>
+        <a href="http://3.213.140.233/Primera-Unidad/Css/flex3.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Css 03</a>
+        <a href="http://3.213.140.233/Primera-Unidad/Css/flex4.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Css 04</a>
+        <a href="http://3.213.140.233/Primera-Unidad/Css/prac03.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Css 05</a>
+        <a href="http://3.213.140.233/Primera-Unidad/Css/prac04.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Css 06</a>
+    </div>
+
+    <div id="javascript" class="content-box">
+        <h3>Ejercicios</h3>
+        <a href="http://3.213.140.233/Primera-Unidad/javascript/pracjs01.html" class="btn btn-outline-success w-100 mt-2 btn-unit">JavaScript 01</a>
+        <a href="http://3.213.140.233/Primera-Unidad/javascript/pracjs02.html" class="btn btn-outline-success w-100 mt-2 btn-unit">JavaScript 02</a>
+        <a href="http://3.213.140.233/Primera-Unidad/javascript/pracjs03.html" class="btn btn-outline-success w-100 mt-2 btn-unit">JavaScript 03</a>
+        <a href="http://3.213.140.233/Primera-Unidad/javascript/pracjs04.html" class="btn btn-outline-success w-100 mt-2 btn-unit">JavaScript 04</a>
+        <a href="http://3.213.140.233/Primera-Unidad/javascript/pracjs05.html" class="btn btn-outline-success w-100 mt-2 btn-unit">JavaScript 05</a>
+        <a href="http://3.213.140.233/Primera-Unidad/javascript/pracjs06.html" class="btn btn-outline-success w-100 mt-2 btn-unit">JavaScript 06</a>
+    </div>
+
+    <div id="Getbootstrap" class="content-box">
+        <h3>Ejercicios</h3>
+        <a href="http://3.213.140.233/Primera-Unidad/getbootstrap/boot01.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Boot 01</a>
+        <a href="http://3.213.140.233/Primera-Unidad/getbootstrap/boot02.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Boot 02</a>
+        <a href="http://3.213.140.233/Primera-Unidad/getbootstrap/boot03.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Boot 03</a>
+        <a href="http://3.213.140.233/Primera-Unidad/getbootstrap/boot04.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Boot 04</a>
+    </div>
+
+    <div id="Trabajos" class="content-box">
+        <h3>Trabajos</h3>
+        <a href="http://3.213.140.233/Primera-Unidad/Trabajos/Calculadora.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Calculadora</a>
+        <a href="http://3.213.140.233/Primera-Unidad/Trabajos/pc.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Computadora</a>
+        <a href="http://3.213.140.233/Primera-Unidad/Trabajos/tarear.html" class="btn btn-outline-success w-100 mt-2 btn-unit">Primer Trabajo</a>
+    </div>
+
+</div>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function mostrar(id) {
+    document.querySelectorAll(".content-box").forEach(e => e.style.display = "none");
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>

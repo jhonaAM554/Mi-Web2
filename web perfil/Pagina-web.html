@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <style>
+        :root {
+            --bg-dark: linear-gradient(135deg, #071033 10%, #0b243b 60%);
+            --card-dark: #0b1220;
+            --text-dark: #e6eef8;
+            --muted-dark: #9fb4d6;
+        }
+        body {
+            background: var(--bg-dark);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .profile-card {
+            background: var(--card-dark);
+            border-radius: 18px;
+            padding: 40px;
+            max-width: 720px;
+            width: 95%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007bff;
+        }
+        .btn-unit {
+            min-width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="profile-card">
+    <img src="imagen.png" class="profile-img" alt="foto">
+
+    <h1 class="fw-bold mt-3">Jhonatan Julio Cesar Amanqui Durand</h1>
+
+    <p class="lead" id="leadText">
+        Bienvenido a mi portafolio donde muestro mis trabajos y prácticas
+        desarrolladas en HTML, CSS, JavaScript y otros lenguajes.
+    </p>
+
+    <div class="d-flex justify-content-center gap-3 mt-4">
+        <a href="primera-unidad.html" class="btn btn-primary btn-lg btn-unit">Primera Unidad</a>
+        <a href="segunda-unidad.html" class="btn btn-outline-primary btn-lg btn-unit">Segunda Unidad</a>
+    </div>
+</div>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

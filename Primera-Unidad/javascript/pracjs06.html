@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            border: 4px solid red;
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 250px;
+        }
+    </style>
+    <script>
+        a=0;
+        b=150;
+        function mover()
+        {
+            caja = document.querySelector(".caja")
+            caja.style.left = a+"px"
+            a+=10;
+        }
+        function moverDER()
+        {
+            caja = document.querySelector(".caja")
+            caja.style.left = a+"px"
+            a-=10;
+        }
+        function moverARR()
+        {
+            caja = document.querySelector(".caja")
+            caja.style.top = b+"px"
+            b-=10;
+        }
+        function moverABJ()
+        {
+            caja = document.querySelector(".caja")
+            caja.style.top = b+"px"
+            b+=10;
+        }
+
+    </script>
+</head>
+<body>
+    <div class="caja"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="mover()">BOTON DER</button>
+    <button onclick="moverDER()">BOTON IZQ</button>
+    <button onclick="moverARR()">BOTON ARRIBA</button>
+    <button onclick="moverABJ()">BOTON ABAJO</button>
+</body>
+</html>
